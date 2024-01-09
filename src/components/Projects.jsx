@@ -29,7 +29,7 @@ useEffect(() => {
                 <div>
                     <h3>{project.name}</h3>
                     <p>{project.description}</p>
-                    <Link to={"/projectdetails/:projectId"}>
+                    <Link to={`/projectdetails/${project.id}`}>
                     <button className="btn btn-dark">More Details</button>
                     </Link>
                 </div>

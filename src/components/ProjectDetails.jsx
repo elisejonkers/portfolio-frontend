@@ -18,6 +18,7 @@ const loadDetails = () => {
         console.log("Error getting project details", error)
     })
 }
+console.log(project.technologies)
 
 useEffect(() => {
     loadDetails()
@@ -25,13 +26,14 @@ useEffect(() => {
 
     return (
         <div>
+            <a href={project.URL}>
             <h2>{project.name}</h2>  
+            </a>
             <p>{project.description}</p>     
             
-                {project.skills.map((skill) => {
-                    return <p>{skill}</p>
-
-                })}
+                {/* {project.technologies.map((technology) => {
+                    return <p>{technology}</p>
+                })} */}
         </div>
     )
 }

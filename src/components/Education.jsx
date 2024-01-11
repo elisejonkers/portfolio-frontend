@@ -1,10 +1,35 @@
+import axios from "axios"
+import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 
 function Education () {
+const [education, setEducation] = useState([])
+
+const loadEducation = () => {
+    axios
+    .get(`${import.meta.env.VITE_API_URL}/education`)
+    .then((response) => {
+        setEducation(response.data)
+    })
+    .catch((error) => {
+        console.log("This is error getting education", error)
+    })
+}
+
+useEffect(() => {
+    loadEducation()
+}, [])
+
     return (
         <div>
-            <h1>This is Education</h1>
-        
+            {education.map((course) => {
+                return (
+                <div>
+                    <p>{course.title}</p>
+                    <p>{course.date}</p>
+                </div>
+                )
+            })}
         </div>
     )
 }

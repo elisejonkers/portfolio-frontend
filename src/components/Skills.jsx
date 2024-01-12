@@ -3,44 +3,41 @@ import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 
 function Skills () {
-const [skills, setSkills] = useState([])
+  const [skills, setSkills] = useState([]);
 
-const loadSkills = () => {
+  const loadSkills = () => {
     axios
-    .get(`${import.meta.env.VITE_API_URL}/skills`)
-    .then((response) => {
-        setSkills(response.data)
-    })
-    .catch((error) => {
-        console.log("This is error in getting skills", error)
-    })
-}
+      .get(`${import.meta.env.VITE_API_URL}/skills`)
+      .then((response) => {
+        setSkills(response.data);
+      })
+      .catch((error) => {
+        console.log("This is error in getting skills", error);
+      });
+  };
 
-const typeOfSkill = (skill) => {
+  const typeOfSkill = (skill) => {
     if (skill.type === "hard") {
-        return <span className="hard">{skill.name}</span>
+      return <div className="hard">{skill.name}</div>;
     } else if (skill.type === "soft") {
-        return <span className="soft">{skill.name}</span>
+      return <div key={skill.id} className="soft">{skill.name}</div>;
     }
-}
+  };
 
-useEffect(() => {
-    loadSkills()
-}, [])
+  useEffect(() => {
+    loadSkills();
+  }, []);
 
-return (
+  return (
     <div>
+      <h1>Skills</h1>
+      <div className="skills-container">
         {skills.map((skill) => {
-            return (
-                <div key={skill.id}>
-                    <p>{typeOfSkill(skill)}</p> 
-                </div>
-            )
+          return typeOfSkill(skill)
         })}
-    </div>
-)
-    
-
+        </div>
+      </div>
+  );
 }
 
 export default Skills

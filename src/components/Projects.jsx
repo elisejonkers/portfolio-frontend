@@ -25,7 +25,7 @@ useEffect(() => {
     return (
         <div>
             <h1>Projects</h1>
-        <div className="project-container">
+        <div className="container">
         
         {projects.map((project) => {
             return (

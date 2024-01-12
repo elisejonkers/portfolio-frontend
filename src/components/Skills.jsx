@@ -32,7 +32,7 @@ return (
     <div>
         {skills.map((skill) => {
             return (
-                <div>
+                <div key={skill.id}>
                     <p>{typeOfSkill(skill)}</p> 
                 </div>
             )

@@ -14,38 +14,38 @@ const handleLinkClick = (sectionId) => {
 };
 
   return (
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+          <li className="nav-item">
             <Link to={"/"}>
-            <a class="nav-link active" aria-current="page" href="#">
+            <a className="nav-link active" aria-current="page" href="#">
               Home
             </a>
             </Link>
           </li>
-          <li class="nav-item">
-              <button class="nav-link" href="#" onClick={() => handleLinkClick("aboutMe")}>
+          <li className="nav-item">
+              <button className="nav-link" href="#" onClick={() => handleLinkClick("aboutMe")}>
                 About me
               </button>
           </li>
-          <li class="nav-item">
-              <button class="nav-link" href="#" onClick={() => handleLinkClick("projects")}>
+          <li className="nav-item">
+              <button className="nav-link" href="#" onClick={() => handleLinkClick("projects")}>
                 Projects
               </button>
           </li>
-          <li class="nav-item">
-              <button class="nav-link" href="#" onClick={() => handleLinkClick("skills")}>
+          <li className="nav-item">
+              <button className="nav-link" href="#" onClick={() => handleLinkClick("skills")}>
                 Skills
               </button>
           </li>
-          <li class="nav-item">
-              <button class="nav-link" href="#" onClick={() => handleLinkClick("education")}>
+          <li className="nav-item">
+              <button className="nav-link" href="#" onClick={() => handleLinkClick("education")}>
                 Education
               </button>
           </li>
-          <li class="nav-item">
-              <button class="nav-link" href="#" onClick={() => handleLinkClick("experience")}>
+          <li className="nav-item">
+              <button className="nav-link" href="#" onClick={() => handleLinkClick("experience")}>
                 Professional experience
               </button>
           </li>

@@ -24,17 +24,20 @@ useEffect(() => {
 
     return (
         <div>
+            <h1>Projects</h1>
+        <div className="project-container">
+        
         {projects.map((project) => {
             return (
-                <div>
-                    <h3>{project.name}</h3>
-                    <p>{project.description}</p>
+                <div key={project.id} className="card">
+                    <h5 className="card-title">{project.name}</h5>
                     <Link to={`/projectdetails/${project.id}`}>
-                    <button className="btn btn-dark">More Details</button>
+                    <a >More Details</a>
                     </Link>
                 </div>
             )
         })}
+        </div>
         </div>
     )
 }

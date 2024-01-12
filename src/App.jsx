@@ -18,15 +18,14 @@ function App() {
 return (
     <>
     <NavBar />
-    
 
     <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/aboutme" element={<AboutMe />}/>
+        {/* <Route path="/aboutme" element={<AboutMe />}/>
         <Route path="/projects" element={<Projects/>}/>
         <Route path="/skills" element={<Skills />}/>
         <Route path="/experience" element={<Experience/>}/>
-        <Route path="/education" element={<Education/>}/>
+        <Route path="/education" element={<Education/>}/> */}
         <Route path="/projectdetails/:projectId" element={<ProjectDetails/>}/>
         <Route path="/experiencedetails/:experienceId" element={<ExperienceDetails/>}/>
         <Route path="/educationdetails/:educationId" element={<EducationDetails/>}/>

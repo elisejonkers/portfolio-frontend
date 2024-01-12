@@ -24,7 +24,7 @@ useEffect(() => {
         <div>
             {education.map((course) => {
                 return (
-                <div>
+                <div key={course.id}>
                     <p>{course.title}</p>
                     <p>{course.date}</p>
                 </div>

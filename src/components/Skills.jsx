@@ -18,9 +18,9 @@ function Skills () {
 
   const typeOfSkill = (skill) => {
     if (skill.type === "hard") {
-      return <div className="hard">{skill.name}</div>;
+      return <span className="hard badge">{skill.name}</span>;
     } else if (skill.type === "soft") {
-      return <div key={skill.id} className="soft">{skill.name}</div>;
+      return <span key={skill.id} className="soft badge">{skill.name}</span>;
     }
   };
 
@@ -30,7 +30,12 @@ function Skills () {
 
   return (
     <div>
-      <h1>Skills</h1>
+      <div className="title-container">
+                <div className="line"></div>
+            <h1 className="title">Skills</h1>
+            <div className="line"></div>
+            </div>
+
       <div className="skills-container">
         {skills.map((skill) => {
           return typeOfSkill(skill)

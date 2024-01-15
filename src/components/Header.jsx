@@ -20,7 +20,7 @@ function Header() {
       </div>
 
       <div className="header-item">
-      <h5>Download my CV</h5>
+      <button className="btn btn-accent">Download my CV</button>
       </div>
 
     </section>

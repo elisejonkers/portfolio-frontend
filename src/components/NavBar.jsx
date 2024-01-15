@@ -1,62 +1,81 @@
 import { Link, useNavigate } from "react-router-dom";
 
 function NavBar() {
-const navigateTo = useNavigate()
+  const navigateTo = useNavigate();
 
-const handleLinkClick = (sectionId) => {
-  navigateTo("/");
-  setTimeout(() => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  }, 100);
-};
+  const handleLinkClick = (sectionId) => {
+    navigateTo("/");
+    setTimeout(() => {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
+  };
 
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
-      <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-          <li className="nav-item">
-            <Link to={"/"}>
-            <a className="nav-link active" aria-current="page" href="#">
-              Home
-            </a>
-            </Link>
+    <div className="navbar bg-secondary">
+      <div className="navbar-start">
+        <div className="dropdown">
+          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabIndex={0}
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li>
+              <a onClick={() => handleLinkClick("aboutMe")}>About me</a>
+            </li>
+            <li>
+              <a onClick={() => handleLinkClick("projects")}>Projects</a>
+            </li>
+            <li>
+              <a onClick={() => handleLinkClick("skills")}>Skills</a>
+            </li>
+            <li>
+              <a onClick={() => handleLinkClick("education")}>Education</a>
+            </li>
+            <li>
+              <a onClick={() => handleLinkClick("experience")}>Experience</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="navbar-center hidden lg:flex">
+        <ul className="menu menu-horizontal px-1">
+          <li>
+            <a onClick={() => handleLinkClick("aboutMe")}>About me</a>
           </li>
-          <li className="nav-item">
-              <button className="nav-link" href="#" onClick={() => handleLinkClick("aboutMe")}>
-                About me
-              </button>
+          <li>
+            <a onClick={() => handleLinkClick("projects")}>Projects</a>
           </li>
-          <li className="nav-item">
-              <button className="nav-link" href="#" onClick={() => handleLinkClick("projects")}>
-                Projects
-              </button>
+          <li>
+            <a onClick={() => handleLinkClick("skills")}>Skills</a>
           </li>
-          <li className="nav-item">
-              <button className="nav-link" href="#" onClick={() => handleLinkClick("skills")}>
-                Skills
-              </button>
+          <li>
+            <a onClick={() => handleLinkClick("education")}>Education</a>
           </li>
-          <li className="nav-item">
-              <button className="nav-link" href="#" onClick={() => handleLinkClick("education")}>
-                Education
-              </button>
+          <li>
+            <a onClick={() => handleLinkClick("experience")}>Experience</a>
           </li>
-          <li className="nav-item">
-              <button className="nav-link" href="#" onClick={() => handleLinkClick("experience")}>
-                Professional experience
-              </button>
-          </li>
-          {/* <li class="nav-item">
-                <Link to={}>
-                <a class="nav-link" href="#">Contact me</a>
-                </Link>
-              </li> */}
         </ul>
       </div>
-    </nav>
+      <div className="navbar-end"></div>
+    </div>
   );
 }
 

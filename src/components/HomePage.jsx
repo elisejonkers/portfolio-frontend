@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import AboutMe from "./AboutMe"
-import Education from "./Education";
-import Experience from "./Experience";
+import Timeline from "./Timeline";
 import Projects from "./Projects"
 import Skills from "./Skills"
+import ContactMe from "./ContactMe";
 
 function HomePage () {
 
@@ -18,7 +18,6 @@ useEffect(() => {
     }
   }, []);
 
-
     return (
       <div>
         <section id="aboutMe">
@@ -30,11 +29,11 @@ useEffect(() => {
         <section id="skills">
           <Skills />
         </section>
-        <section id="education">
-            <Education />
+        <section id="timeline">
+            <Timeline />
         </section>
-        <section id="experience">
-            <Experience />
+        <section id="contactme">
+            <ContactMe />
         </section>
       </div>
     );

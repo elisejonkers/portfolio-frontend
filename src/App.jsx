@@ -5,12 +5,10 @@ import NavBar from './components/NavBar'
 import Header from './components/Header'
 import AboutMe from './components/AboutMe'
 import Skills from './components/Skills'
-import Experience from './components/Experience'
-import Education from './components/Education'
+import Timeline from './components/Timeline'
 import Projects from './components/Projects'
 import ProjectDetails from './components/ProjectDetails'
 import ExperienceDetails from './components/ExperienceDetails'
-import EducationDetails from './components/EducationDetails'
 import HomePage from './components/HomePage'
 
 
@@ -30,7 +28,6 @@ return (
         <Route path="/education" element={<Education/>}/> */}
         <Route path="/projectdetails/:projectId" element={<ProjectDetails/>}/>
         <Route path="/experiencedetails/:experienceId" element={<ExperienceDetails/>}/>
-        <Route path="/educationdetails/:educationId" element={<EducationDetails/>}/>
     </Routes>
     </>
 )

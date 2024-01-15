@@ -47,10 +47,10 @@ function NavBar() {
               <a onClick={() => handleLinkClick("skills")}>Skills</a>
             </li>
             <li>
-              <a onClick={() => handleLinkClick("education")}>Education</a>
+              <a onClick={() => handleLinkClick("timeline")}>Timeline</a>
             </li>
             <li>
-              <a onClick={() => handleLinkClick("experience")}>Experience</a>
+              <a onClick={() => handleLinkClick("contactme")}>Contact me</a>
             </li>
           </ul>
         </div>
@@ -67,10 +67,10 @@ function NavBar() {
             <a onClick={() => handleLinkClick("skills")}>Skills</a>
           </li>
           <li>
-            <a onClick={() => handleLinkClick("education")}>Education</a>
+            <a onClick={() => handleLinkClick("timeline")}>Timeline</a>
           </li>
           <li>
-            <a onClick={() => handleLinkClick("experience")}>Experience</a>
+            <a onClick={() => handleLinkClick("contactme")}>Contact me</a>
           </li>
         </ul>
       </div>

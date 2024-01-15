@@ -4,7 +4,7 @@ import github_icon from "../assets/github-logo.png";
 
 function Header() {
   return (
-    <section className="header">
+    <section className="header bg-secondary">
 
       <div className="header-item">
         <a href="https://www.linkedin.com/in/elise-jonkers-full-stack-developer/">

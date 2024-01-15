@@ -19,8 +19,8 @@ useEffect(() => {
   }, []);
 
     return (
-      <div>
-        <section id="aboutMe">
+      <div className="homepage">
+        <section id="aboutme">
           <AboutMe />
         </section>
         <section id="projects">

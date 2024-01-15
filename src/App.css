@@ -14,6 +14,7 @@
 
 #root {
     background-color: rgb(226, 228, 227);
+    position: relative;
 }
 
 h1 {
@@ -46,6 +47,11 @@ h1 {
     height: 8vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 .header-item {
@@ -66,6 +72,11 @@ h1 {
 /* NavBar */
 .navbar {
     font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    left: 0;
+    top: 8vh;
+    width: 100%;
+    z-index: 100;
 }
 
 /* Projects */
@@ -134,3 +145,19 @@ h1 {
     margin: 1rem;
 }
 
+
+/* Timeline  */
+.timeline {
+    padding: 5vh;
+}
+
+/* HomePage */
+.homepage {
+    position: absolute;
+    left: 0;
+    top: 19vh;
+}
+
+#aboutme {
+    background-color: red;
+}

@@ -92,9 +92,8 @@ h1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 6rem;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
     font-family: 'Montserrat', sans-serif;
-
 }
 
 .aboutme-item-1 {
@@ -169,11 +168,12 @@ h1 {
     border-radius: 12px;
 }
 
-
 /* Skills */
 #skills {
     padding: 2em;
     background-color: rgb(72, 119, 121);
+    display: flex;
+    justify-content: center;
 }
 
 .hard {
@@ -198,12 +198,16 @@ h1 {
 .skills-container {
     display: flex;
     flex-wrap: wrap;
-    padding-right: 2rem;
-    padding-left: 2rem
+    padding-right: 6rem;
+    padding-left: 6rem;
+    width: 800px;
+
 }
 
 .badge {
     margin: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 

@@ -162,9 +162,52 @@ h1 {
     top: 11.5vh;
 }
 
-#aboutme {
-    background-color: red;
-}
+
 
 /* ProjectDetails */
 
+/* AboutMe */
+.aboutme-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.aboutme-item-1 {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.aboutme-item-1 button {
+    margin-top: 2rem;
+    align-self: start;
+    justify-self: center;
+    width: 10rem;
+    /* tekst dikgedrukt maken */
+}
+
+.aboutme-item-2 {
+    margin-right: 4rem;
+    margin-left: 4rem;
+    width: 400px;
+    justify-self: center;
+}
+
+.aboutme-item-2 h1 {
+    margin-top: 6rem;
+    font-size: 350%;
+}
+
+
+
+
+
+/* Screen sizes */
+/* Extra Small (XS): max-width 576px
+Small (SM): min-width 576px and max-width 767px
+Medium (MD): min-width 768px and max-width 991px
+Large (LG): min-width 992px and max-width 1199px
+Extra Large (XL): min-width 1200px */

@@ -185,16 +185,6 @@ h1 {
     background-color: #233130
 }
 
-/* .soft, .hard {
-    width: 15rem;
-    padding: 1em;
-    text-align: center;
-    border-radius: 25px;
-    display: grid;
-    justify-self: center;
-    margin: 1rem;
-} */
-
 .skills-container {
     display: flex;
     flex-wrap: wrap;
@@ -210,23 +200,18 @@ h1 {
     padding-bottom: 1rem;
 }
 
-
 /* Timeline  */
 .timeline {
     padding: 5vh;
 }
 
-
-
-
-
 /* ProjectDetails */
-
-
-
-
-
-
+.projectdetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
 
 /* Screen sizes */
 /* Extra Small (XS): max-width 576px

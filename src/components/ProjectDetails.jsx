@@ -23,6 +23,7 @@ function ProjectDetails() {
   }, [projectId]);
 
   return (
+    <div className="projectdetails">
     <div className="card lg:card-side bg-base-100 shadow-xl">
       <figure>
         <img
@@ -36,6 +37,7 @@ function ProjectDetails() {
         <div className="card-actions justify-end">
           <button className="btn btn-primary">Listen</button>
         </div>
+      </div>
       </div>
     </div>
     // <div>

@@ -26,7 +26,7 @@ function Header() {
       </div>
 
       <div className="header-item">
-      <button className="btn btn-accent" onClick={downloadCV}>Download my CV</button>
+      <button className="btn btn-sm bg-accent" onClick={downloadCV}>Download my CV</button>
       </div>
 
     </section>

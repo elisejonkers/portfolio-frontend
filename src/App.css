@@ -44,7 +44,7 @@ h1 {
 
 /* Header */
 .header {
-    height: 8vh;
+    height: 6vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     position: fixed;
@@ -74,9 +74,13 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     position: fixed;
     left: 0;
-    top: 8vh;
-    width: 100%;
+    top: 6vh;
+    min-width: 100%;
     z-index: 100;
+    padding: 0;
+    min-height: 0;
+    max-height: 3rem;
+
 }
 
 /* Projects */
@@ -155,9 +159,12 @@ h1 {
 .homepage {
     position: absolute;
     left: 0;
-    top: 19vh;
+    top: 11.5vh;
 }
 
 #aboutme {
     background-color: red;
 }
+
+/* ProjectDetails */
+

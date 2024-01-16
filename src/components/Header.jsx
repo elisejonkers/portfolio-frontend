@@ -1,8 +1,14 @@
-import { Link } from "react-router-dom";
 import linkedin_icon from "../assets/linkedin-logo.png";
 import github_icon from "../assets/github-logo.png";
+import cvFile from "../assets/EliseJonkers_FrontEndDeveloper_CV.pdf"
+
 
 function Header() {
+  const downloadCV = () => {
+    window.open(cvFile, '_blank')
+  }
+
+
   return (
     <section className="header bg-secondary">
 
@@ -20,7 +26,7 @@ function Header() {
       </div>
 
       <div className="header-item">
-      <button className="btn btn-accent">Download my CV</button>
+      <button className="btn btn-accent" onClick={downloadCV}>Download my CV</button>
       </div>
 
     </section>

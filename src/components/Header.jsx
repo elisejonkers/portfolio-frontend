@@ -1,6 +1,6 @@
 import linkedin_icon from "../assets/linkedin-logo.png";
 import github_icon from "../assets/github-logo.png";
-import cvFile from "../assets/EliseJonkers_FrontEndDeveloper_CV.pdf"
+import cvFile from "../assets/EliseJonkers_FullStackDeveloper_Resume.pdf"
 
 
 function Header() {

@@ -32,23 +32,12 @@ useEffect(() => {
         <div className="projectdiv">
         {projects.map((project) => {
             return (
-              <div key={project.id} className="card w-96 bg-base-100 shadow-xl">
-                <figure>
-                  {/* <img
-                    src={`src/assets/${project.image}`}
-                    alt={project.name}
-                  /> */}
-                  <p>{project.id}</p>
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">{project.name}</h2>
+              <div key={project.id} className="project-card">
+                  <h1>{project.name}</h1>
                   <p>{project.oneliner}</p>
-                  <div className="card-actions justify-end">
                   <Link to={`/projectdetails/${project.id}`}>
-                    <button className="btn btn-primary">See more details</button>
+                    <button className="bg-accent">See more details</button>
                     </Link>
-                  </div>
-                </div>
               </div>
             );
         })}

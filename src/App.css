@@ -19,6 +19,10 @@
 
 h1 {
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-large;
+    padding-bottom: 5vh;
+    margin: 0;
 }
 
 .container {
@@ -29,13 +33,6 @@ h1 {
     height: 15em;
 }
 
-.card {
-    text-align: center;
-    width: 15em;
-    display: grid;
-    align-items: center;
-    justify-content: space-evenly;
-}
 
 .icon {
     height: 3vh;
@@ -83,34 +80,94 @@ h1 {
 
 }
 
+/* HomePage */
+.homepage {
+    position: absolute;
+    left: 0;
+    top: 11.5vh;
+}
+
+/* AboutMe */
+.aboutme-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.aboutme-item-1 {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.aboutme-item-1 button {
+    margin-top: 2rem;
+    align-self: start;
+    justify-self: center;
+    width: 10rem;
+    /* tekst dikgedrukt maken */
+}
+
+.aboutme-item-2 {
+    margin-right: 4rem;
+    margin-left: 4rem;
+    width: 400px;
+    justify-self: center;
+}
+
+.aboutme-item-2 h1 {
+    margin-top: 6rem;
+    font-size: 350%;
+}
+
 /* Projects */
 #projects {
     padding: 2em;
     background-color: rgb(166, 187, 182);
 }
 
-h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: x-large;
-    padding-bottom: 5vh;
-    margin: 0;
-}
-
 .projectdiv {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-bottom: 5vh;
 }
 
-.title-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.project-card {
+    background-color: white;
+    width: 250px;
+    height: 350px;
+    justify-self: center;
+    border-radius: 12px;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
 
-  .line {
-    background-color: black;
-  }
+.project-card h1 {
+    font-size: 150%;
+    padding: 2rem 1rem 1rem 1rem;
+    height: 100px;
+}
 
+.project-card p {
+    font-size: 95%;
+    padding: 1rem;
+    position: absolute;
+}
+
+.project-card button {
+    position: absolute;
+    margin-bottom: 1rem;
+    bottom: 0;
+    left: 25px;
+    width: 150px;
+    height: 50px;
+    border-radius: 12px;
+}
 
 
 /* Skills */
@@ -155,51 +212,13 @@ h1 {
     padding: 5vh;
 }
 
-/* HomePage */
-.homepage {
-    position: absolute;
-    left: 0;
-    top: 11.5vh;
-}
+
 
 
 
 /* ProjectDetails */
 
-/* AboutMe */
-.aboutme-div {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 6rem;
-    margin-bottom: 4rem;
-    font-family: 'Montserrat', sans-serif;
 
-}
-
-.aboutme-item-1 {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-}
-
-.aboutme-item-1 button {
-    margin-top: 2rem;
-    align-self: start;
-    justify-self: center;
-    width: 10rem;
-    /* tekst dikgedrukt maken */
-}
-
-.aboutme-item-2 {
-    margin-right: 4rem;
-    margin-left: 4rem;
-    width: 400px;
-    justify-self: center;
-}
-
-.aboutme-item-2 h1 {
-    margin-top: 6rem;
-    font-size: 350%;
-}
 
 
 

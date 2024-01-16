@@ -16,14 +16,20 @@ function Timeline() {
       });
   };
 
+  const decideClassName = (id) => {
+    if (id % 2 === 0) {
+      return 'timeline-start md:text-end mb-10'
+    } else {
+      return "timeline-end mb-10"
+    }
+  }
+
   useEffect(() => {
     loadTimelineItems();
   }, []);
 
+
   return (
-
-    
-
     <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
       <div className="title-container">
                 <div className="line"></div>
@@ -47,7 +53,7 @@ function Timeline() {
                 />
               </svg>
             </div>
-            <div className="timeline-end mb-10">
+            <div className={decideClassName(item.id)}> 
               <time className="font-mono italic">{item.date}</time>
               <div className="text-lg font-black">{item.title}</div>
               <div className="text-md italic">{item.company}</div>

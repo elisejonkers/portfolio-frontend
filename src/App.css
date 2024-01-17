@@ -208,6 +208,35 @@ h1 {
     padding: 5vh;
 }
 
+/* ContactMe */
+.contactme-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-details {
+    padding: 4rem;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+}
+
+.email p {
+    padding-left: 2rem;
+}
+
+.linkedin, .email, .github {
+    display: flex;
+    align-items: center;
+}
+
+.linkedin p, .email p, .github p {
+    padding-left: 2rem;
+}
+
+
 /* ProjectDetails */
 .projectdetails {
     display: flex;

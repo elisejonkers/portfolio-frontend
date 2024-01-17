@@ -1,4 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
+import linkedin_icon from "../assets/linkedin-logo.png";
+import github_icon from "../assets/github-logo.png";
 
 function NavBar() {
   const navigateTo = useNavigate();
@@ -14,7 +16,7 @@ function NavBar() {
   };
 
   return (
-    <div className="navbar bg-primary">
+    <div className="navbar bg-secondary">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -54,6 +56,9 @@ function NavBar() {
             </li>
           </ul>
         </div>
+        <Link to='/'>
+        <a className="btn btn-ghost text-xl elisejonkers">Elise Jonkers</a>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -74,8 +79,17 @@ function NavBar() {
           </li>
         </ul>
       </div>
-      <div className="navbar-end"></div>
-    </div>
+      <div className="navbar-end">
+      <div className="header-item">
+        <a href="https://www.linkedin.com/in/elise-jonkers-full-stack-developer/" target="_blank">
+          <img src={linkedin_icon} alt="linkedin icon" className="icon" />
+        </a>
+        <a href="https://github.com/elisejonkers" target="_blank">
+          <img src={github_icon} alt="github icon" className="icon" />
+        </a>
+      </div>
+      </div>
+    </div>   
   );
 }
 

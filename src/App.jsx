@@ -15,10 +15,8 @@ import HomePage from './components/HomePage'
 function App() {
 return (
     <>
-    <Header />
     <NavBar />
     
-
     <Routes>
         <Route path="/" element={<HomePage />} />
         {/* <Route path="/aboutme" element={<AboutMe />}/>

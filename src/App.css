@@ -4,6 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@600&display=swap');
 
 @font-face {
     font-family: 'Brittany';
@@ -15,6 +16,8 @@
 #root {
     background-color: rgb(226, 228, 227);
     position: relative;
+    max-width: 100vwh;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
@@ -211,6 +214,46 @@ h1 {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+}
+
+.projectdetails-card {
+    border: 1px black solid;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 65%;
+    height: 35rem;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+}
+
+.projectdetails-card img {
+    width: 25rem;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+}
+
+.projectdetails-card-body {
+    margin: 2rem;
+}
+
+.projectdetails-card-body h2 {
+    text-align: center;
+    font-family: 'Bitter', serif;
+    font-size: xx-large;
+    margin-bottom: 1rem;
+}
+
+.used-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.used-technologies span {
+    font-size: xx-small;
+    margin: 1em;
 }
 
 /* Screen sizes */

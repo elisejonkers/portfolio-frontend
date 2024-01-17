@@ -1,10 +1,10 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-useParams;
 
 function ProjectDetails() {
   const [project, setProject] = useState({});
+  const [technologies, setTechnologies] = useState([])
   const { projectId } = useParams();
 
   const loadDetails = () => {
@@ -12,11 +12,16 @@ function ProjectDetails() {
       .get(`${import.meta.env.VITE_API_URL}/projects/${projectId}`)
       .then((response) => {
         setProject(response.data);
+        setTechnologies(response.data.technologies)
       })
       .catch((error) => {
         console.log("Error getting project details", error);
       });
-  };
+  }; 
+
+  const redirectToWindow = (project) => {
+    window.open(project.URL, '_blank')
+  }
 
   useEffect(() => {
     loadDetails();
@@ -24,22 +29,41 @@ function ProjectDetails() {
 
   return (
     <div className="projectdetails">
-    <div className="card lg:card-side bg-base-100 shadow-xl">
-      <figure>
-        <img
-          src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
-          alt="Album"
-        />
-      </figure>
-      <div className="card-body">
-        <h2 className="card-title">{project.name}</h2>
-        <p>Click the button to listen on Spotiwhy app.</p>
-        <div className="card-actions justify-end">
-          <button className="btn btn-primary">Listen</button>
+      <div className="projectdetails-card">
+        <img src={`../src/assets/${project.image}`} alt="image project" />
+      <div className="projectdetails-card-body">
+        <h2>{project.name}</h2>
+        <p>{project.description}</p>
+        <div className="used-technologies">
+          {technologies.map((technology) => {
+            return <span className="badge">{technology}</span>
+          })}
         </div>
+        <button onClick={() => redirectToWindow(project)}>Check the app here!</button>
       </div>
       </div>
     </div>
+
+
+
+    // <div className="projectdetails">
+    // <div className="card lg:card-side bg-base-100 shadow-xl">
+    //   <figure>
+    //     <img
+    //       src='https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg'
+    //       alt="project"
+    //     />
+    //   </figure>
+    //   <div className="card-body">
+    //     <h2 className="card-title">{project.name}</h2>
+    //     <p>{project.description}</p>
+    //     <div className="card-actions justify-end">
+    //       <button className="btn btn-primary" onClick={() => redirectToWindow(project)}>Go to the website</button>
+    //     </div>
+    //   </div>
+    //   </div>
+    // </div>
+
     // <div>
     //     <a href={project.URL}>
     //     <h2>{project.name}</h2>

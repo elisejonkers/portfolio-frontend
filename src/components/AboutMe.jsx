@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import elise_1 from "../assets/IMGL0535.jpg";
-import elise_2 from "../assets/IMGL0552.jpg";
+import elise_1 from "../assets/foto1.jpg";
 import cvFile from "../assets/EliseJonkers_FullStackDeveloper_Resume.pdf"
 
 function AboutMe() {

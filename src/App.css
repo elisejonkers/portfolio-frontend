@@ -14,7 +14,7 @@
 /* General */
 
 #root {
-    background-color: rgb(226, 228, 227);
+    background-color: #ebebec;
     position: relative;
     max-width: 100vwh;
     font-family: 'Montserrat', sans-serif;
@@ -75,13 +75,18 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     position: fixed;
     left: 0;
-    top: 6vh;
+    top: 0;
     min-width: 100%;
     z-index: 100;
     padding: 0;
-    min-height: 0;
-    max-height: 3rem;
-    color: #b56f60;
+    height: 8vh;
+    color: #ebebec;
+}
+
+.elisejonkers {
+    font-family: "Brittany";
+    font-size: 220%;
+    color: #ebebec;
 }
 
 /* HomePage */
@@ -93,31 +98,21 @@ h1 {
 
 /* AboutMe */
 .aboutme-div {
+    background-color: #ebebec;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
     font-family: 'Montserrat', sans-serif;
+    
 }
 
-.aboutme-item-1 {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-}
-
-.aboutme-item-1 button {
-    margin-top: 2rem;
-    align-self: start;
-    justify-self: center;
-    width: 10rem;
-    /* tekst dikgedrukt maken */
-}
 
 .aboutme-item-2 {
     margin-right: 4rem;
     margin-left: 4rem;
     width: 400px;
     justify-self: center;
+    background-color: #ebebec;
 }
 
 .aboutme-item-2 h1 {
@@ -128,26 +123,25 @@ h1 {
 /* Projects */
 #projects {
     padding: 2em;
-    background-color: rgb(166, 187, 182);
 }
 
 .projectdiv {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 2vw;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
     padding-bottom: 5vh;
 }
 
 .project-card {
-    background-color: white;
+    background-color: #9cacaa;
     width: 250px;
     height: 350px;
     justify-self: center;
-    border-radius: 12px;
-    position: relative;
+    border-radius: 20px;
     font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .project-card h1 {
@@ -159,34 +153,32 @@ h1 {
 .project-card p {
     font-size: 95%;
     padding: 1rem;
-    position: absolute;
+}
+
+.project-card a {
+    align-self: center;
+    justify-self: center;
 }
 
 .project-card button {
-    position: absolute;
-    margin-bottom: 1rem;
-    bottom: 0;
-    left: 25px;
-    width: 150px;
-    height: 50px;
-    border-radius: 12px;
+    padding: 1rem;
+    border-radius: 20px;
 }
 
 /* Skills */
 #skills {
     padding: 2em;
-    background-color: rgb(72, 119, 121);
+    background-color: #ebebec;
     display: flex;
     justify-content: center;
 }
 
 .hard {
-    background-color: #85937D;
-
+    background-color: #bf9e97;
 }
 
 .soft {
-    background-color: #233130
+    background-color: #ead5cf;
 }
 
 .skills-container {
@@ -195,7 +187,7 @@ h1 {
     padding-right: 6rem;
     padding-left: 6rem;
     width: 800px;
-
+    border-radius: 20px;
 }
 
 .badge {

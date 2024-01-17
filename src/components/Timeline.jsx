@@ -33,7 +33,7 @@ function Timeline() {
     <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
       <div className="title-container">
                 <div className="line"></div>
-            <h1 className="title">Timeline</h1>
+            <h1 className="title">Over the years</h1>
             <div className="line"></div>
             </div>
       {timelineItems.map((item) => {

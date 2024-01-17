@@ -14,7 +14,7 @@ function NavBar() {
   };
 
   return (
-    <div className="navbar bg-secondary">
+    <div className="navbar bg-primary">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -47,7 +47,7 @@ function NavBar() {
               <a onClick={() => handleLinkClick("skills")}>Skills</a>
             </li>
             <li>
-              <a onClick={() => handleLinkClick("timeline")}>Timeline</a>
+              <a onClick={() => handleLinkClick("timeline")}>Over the years</a>
             </li>
             <li>
               <a onClick={() => handleLinkClick("contactme")}>Contact me</a>
@@ -67,7 +67,7 @@ function NavBar() {
             <a onClick={() => handleLinkClick("skills")}>Skills</a>
           </li>
           <li>
-            <a onClick={() => handleLinkClick("timeline")}>Timeline</a>
+            <a onClick={() => handleLinkClick("timeline")}>Over the years</a>
           </li>
           <li>
             <a onClick={() => handleLinkClick("contactme")}>Contact me</a>

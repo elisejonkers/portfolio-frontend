@@ -9,7 +9,7 @@ function Header() {
   }
 
   return (
-    <section className="header bg-secondary">
+    <section className="header bg-primary">
 
       <div className="header-item">
         <a href="https://www.linkedin.com/in/elise-jonkers-full-stack-developer/" target="_blank">

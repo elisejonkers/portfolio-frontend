@@ -36,7 +36,6 @@ h1 {
     height: 15em;
 }
 
-
 .icon {
     height: 3vh;
     margin: 1vw;
@@ -93,7 +92,7 @@ h1 {
 .homepage {
     position: absolute;
     left: 0;
-    top: 11.5vh;
+    top: 8vh;
 }
 
 /* AboutMe */

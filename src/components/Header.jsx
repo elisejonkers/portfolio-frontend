@@ -8,15 +8,14 @@ function Header() {
     window.open(cvFile, '_blank')
   }
 
-
   return (
     <section className="header bg-secondary">
 
       <div className="header-item">
-        <a href="https://www.linkedin.com/in/elise-jonkers-full-stack-developer/">
+        <a href="https://www.linkedin.com/in/elise-jonkers-full-stack-developer/" target="_blank">
           <img src={linkedin_icon} alt="linkedin icon" className="icon" />
         </a>
-        <a href="https://github.com/elisejonkers">
+        <a href="https://github.com/elisejonkers" target="_blank">
           <img src={github_icon} alt="github icon" className="icon" />
         </a>
       </div>

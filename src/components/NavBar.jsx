@@ -15,6 +15,13 @@ function NavBar() {
     }, 100);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    })
+  }
+
   return (
     <div className="navbar bg-secondary">
       <div className="navbar-start">
@@ -57,7 +64,7 @@ function NavBar() {
           </ul>
         </div>
         <Link to='/'>
-        <a className="btn btn-ghost text-xl elisejonkers">Elise Jonkers</a>
+        <a className="btn btn-ghost text-xl elisejonkers" onClick={scrollToTop}>Elise Jonkers</a>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">

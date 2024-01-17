@@ -22,8 +22,8 @@
 
 h1 {
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: x-large;
+    font-family: 'Bitter', serif;
+    font-size: 250%;
     padding-bottom: 5vh;
     margin: 0;
 }
@@ -239,14 +239,12 @@ h1 {
 }
 
 .projectdetails-card {
-    border: 1px black solid;
+    margin-top: 4rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 65%;
     height: 35rem;
     border-radius: 20px;
-    background-color: black;
-    color: white;
 }
 
 .projectdetails-card img {
@@ -276,6 +274,7 @@ h1 {
 .used-technologies span {
     font-size: xx-small;
     margin: 1em;
+    background-color: #bf9e97;
 }
 
 /* Screen sizes */

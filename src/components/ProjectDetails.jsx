@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import image from "../assets/I-do-planner.png"
+import image from "/I-do-planner.png"
 
 function ProjectDetails() {
   const [project, setProject] = useState({});

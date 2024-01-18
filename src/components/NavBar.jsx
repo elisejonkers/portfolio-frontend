@@ -87,7 +87,7 @@ function NavBar() {
         </ul>
       </div>
       <div className="navbar-end">
-      <div className="header-item">
+      <div className="navbar-icons ">
         <a href="https://www.linkedin.com/in/elise-jonkers-full-stack-developer/" target="_blank">
           <img src={linkedin_icon} alt="linkedin icon" className="icon" />
         </a>

@@ -255,6 +255,10 @@ h1 {
     }
 
     /* AboutMe */
+    .homepage {
+        width: 100vw;
+    }
+    
     #aboutme {
         width: 100vw;
     }

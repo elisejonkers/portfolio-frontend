@@ -238,35 +238,33 @@ h1 {
 
 .projectdetails-card {
     margin-top: 4rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     width: 65%;
     height: 35rem;
-    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.projectdetails-card img {
-    width: 25rem;
-    height: auto;
-    align-self: center;
-    justify-self: center;
-}
-
-.projectdetails-card-body {
-    margin: 2rem;
-}
-
-.projectdetails-card-body h2 {
+.projectdetails-card h2 {
     text-align: center;
     font-family: 'Bitter', serif;
     font-size: xx-large;
     margin-bottom: 1rem;
 }
 
+.projectdetails-card p {
+    padding: 2rem;
+}
+
+.projectdetails-card button {
+    padding-bottom: 2rem;
+}
+
 .used-technologies {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 1rem;
+    padding: 2rem;
 }
 
 .used-technologies span {

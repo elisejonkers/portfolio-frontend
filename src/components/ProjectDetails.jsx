@@ -45,8 +45,6 @@ function ProjectDetails() {
   return (
     <div className="projectdetails">
       <div className="projectdetails-card">
-        <img src={`../src/assets/${project.image}`} alt="image project" />
-      <div className="projectdetails-card-body">
         <h2>{project.name}</h2>
         <p>{project.description}</p>
         <div className="used-technologies">
@@ -57,7 +55,6 @@ function ProjectDetails() {
         <button onClick={() => redirectToWindow(project)}>Check the app here!</button>
       </div>
       </div>
-    </div>
   );
 }
 

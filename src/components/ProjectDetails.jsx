@@ -29,9 +29,13 @@ function ProjectDetails() {
 
   const getImage = (id) => {
     if (id === 1) {
-      return ""
-
+      return {i_do_planner}
+    } else if (id === 2) {
+      return happen_hub
+    } else if (id === 3) {
+      return clean_up
     }
+    console.log("imageeeeee")
   }
 
   useEffect(() => {
@@ -41,7 +45,7 @@ function ProjectDetails() {
   return (
     <div className="projectdetails">
       <div className="projectdetails-card">
-        <img src="../assets/HappenHub.png" alt="image project" />
+        <img src={`../src/assets/${project.image}`} alt="image project" />
       <div className="projectdetails-card-body">
         <h2>{project.name}</h2>
         <p>{project.description}</p>

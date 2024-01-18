@@ -32,7 +32,7 @@ function ProjectDetails() {
   return (
     <div className="projectdetails">
       <div className="projectdetails-card">
-        <img src={`../assets/${project.image}`} alt="image project" />
+        <img src={`../src/assets/${project.image}`} alt="image project" />
       <div className="projectdetails-card-body">
         <h2>{project.name}</h2>
         <p>{project.description}</p>

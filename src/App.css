@@ -15,8 +15,7 @@
 
 #root {
     background-color: #ebebec;
-    position: relative;
-    max-width: 100vwh;
+    width: 100vwh;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -41,43 +40,12 @@ h1 {
     margin: 1vw;
 }
 
-/* Header */
-.header {
-    height: 6vh;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-    color: #b56f60;
-}
-
-.header-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.header-item h4 {
-    font-family: "Brittany";
-}
-
-.header-item button {
-    border-radius: 12px;
-}
 
 /* NavBar */
 .navbar {
     font-family: 'Montserrat', sans-serif;
-    position: fixed;
-    left: 0;
-    top: 0;
-    min-width: 100%;
+    width: 100%;
     z-index: 100;
-    padding: 0;
     height: 8vh;
     color: #ebebec;
 }
@@ -104,7 +72,6 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     
 }
-
 
 .aboutme-item-2 {
     margin-right: 4rem;
@@ -273,14 +240,64 @@ h1 {
     background-color: #bf9e97;
 }
 
-@media screen and (max-width: 576px) {
-    .projectdetails {
+@media (max-width: 576px) {
+    
+    .navbar {
+        width: 100vwh;
+    }
+    
+    .title {
+        text-align: center;
+        font-family: 'Bitter', serif;
+        font-size: 250%;
+        padding-bottom: 5vh;
+        margin: 0;
+    }
+
+    /* AboutMe */
+    #aboutme {
+        width: 100vw;
+    }
+    .aboutme-div {
         display: flex;
         flex-direction: column;
     }
+
+    .aboutme-item-2 {
+        margin: 0;
+        padding: 1rem;
+        width: 100vw;
+    }
+
+    /* Projects */
+    .projectdiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        margin: 1rem;
+    }
+
+    /* Skills */
+    .skills-container {
+        width: 100vw;
+    }
+
+    /* ContactMe */
+    .contactme-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projectdetails-card {
+        margin: 0;
+        height: auto;
+
+    }
     
 }
-
 /* Screen sizes */
 /* Extra Small (XS): max-width 576px
 Small (SM): min-width 576px and max-width 767px

@@ -1,7 +1,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import image from "../assets/I-do-planner.png"
+import i_do_planner from "../assets/I-do-planner.png"
+import happen_hub from "../assets/HappenHub.png"
+import clean_up from "../assets/CleanUpGame.png"
 import elise_1 from "../assets/foto1.jpg";
 
 function ProjectDetails() {
@@ -25,6 +27,13 @@ function ProjectDetails() {
     window.open(project.URL, '_blank')
   }
 
+  const getImage = (id) => {
+    if (id === 1) {
+      return ""
+
+    }
+  }
+
   useEffect(() => {
     loadDetails();
   }, [projectId]);
@@ -32,7 +41,7 @@ function ProjectDetails() {
   return (
     <div className="projectdetails">
       <div className="projectdetails-card">
-        <img src={`../assets/${project.image}`} alt="image project" />
+        <img src="../assets/HappenHub.png}" alt="image project" />
       <div className="projectdetails-card-body">
         <h2>{project.name}</h2>
         <p>{project.description}</p>

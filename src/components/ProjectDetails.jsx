@@ -30,7 +30,7 @@ function ProjectDetails() {
   return (
     <div className="projectdetails">
       <div className="projectdetails-card">
-        <img src={`../src/assets/${project.image}`} alt="image project" />
+        <img src={`../assets/${project.image}`} alt="image project" />
       <div className="projectdetails-card-body">
         <h2>{project.name}</h2>
         <p>{project.description}</p>
@@ -43,37 +43,6 @@ function ProjectDetails() {
       </div>
       </div>
     </div>
-
-
-
-    // <div className="projectdetails">
-    // <div className="card lg:card-side bg-base-100 shadow-xl">
-    //   <figure>
-    //     <img
-    //       src='https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg'
-    //       alt="project"
-    //     />
-    //   </figure>
-    //   <div className="card-body">
-    //     <h2 className="card-title">{project.name}</h2>
-    //     <p>{project.description}</p>
-    //     <div className="card-actions justify-end">
-    //       <button className="btn btn-primary" onClick={() => redirectToWindow(project)}>Go to the website</button>
-    //     </div>
-    //   </div>
-    //   </div>
-    // </div>
-
-    // <div>
-    //     <a href={project.URL}>
-    //     <h2>{project.name}</h2>
-    //     </a>
-    //     <p>{project.description}</p>
-
-    //         {/* {project.technologies.map((technology) => {
-    //             return <p>{technology}</p>
-    //         })} */}
-    // </div>
   );
 }
 

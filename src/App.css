@@ -240,7 +240,7 @@ h1 {
     background-color: #bf9e97;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 767px) {
     
     .navbar {
         width: 100vw;
@@ -308,6 +308,7 @@ h1 {
     }
     
 }
+
 /* Screen sizes */
 /* Extra Small (XS): max-width 576px
 Small (SM): min-width 576px and max-width 767px

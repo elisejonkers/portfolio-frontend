@@ -308,12 +308,16 @@ h1 {
     } 
 }
 
-/* @media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px) {
     .homepage {
         width: 100vw;
     }
 
-} */
+    .project-card {
+        width: 20vw;
+        height: 40vh;
+    }
+}
 
 /* Screen sizes */
 /* Extra Small (XS): max-width 576px

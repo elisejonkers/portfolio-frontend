@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import image from "../assets/I-do-planner.png"
 
 function ProjectDetails() {
   const [project, setProject] = useState({});
@@ -30,7 +31,7 @@ function ProjectDetails() {
   return (
     <div className="projectdetails">
       <div className="projectdetails-card">
-        <img src={`../src/assets/${project.image}`} alt="image project" />
+        <img src={image} alt="image project" />
       <div className="projectdetails-card-body">
         <h2>{project.name}</h2>
         <p>{project.description}</p>

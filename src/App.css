@@ -243,7 +243,14 @@ h1 {
 @media (max-width: 576px) {
     
     .navbar {
-        width: 100vwh;
+        width: 100vw;
+        height: 12vh;
+    }
+
+    .homepage {
+        position: absolute;
+        left: 0;
+        top: 12vh;
     }
     
     .title {
@@ -258,7 +265,7 @@ h1 {
     .homepage {
         width: 100vw;
     }
-    
+
     #aboutme {
         width: 100vw;
     }
@@ -298,7 +305,6 @@ h1 {
     .projectdetails-card {
         margin: 0;
         height: auto;
-
     }
     
 }

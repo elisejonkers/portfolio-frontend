@@ -30,7 +30,6 @@ function Skills () {
 
   return (
     <div>
-      <p>hi</p>
       <div className="title-container">
             <h1 className="title">Skills</h1>
             </div>

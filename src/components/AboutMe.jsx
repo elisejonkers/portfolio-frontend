@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import elise_1 from "../assets/foto1.jpg";
-import cvFile from "../assets/EliseJonkers_FullStackDeveloper_Resume.pdf";
+import cvFile from "../assets/EliseJonkers_FullStackDeveloper_CV.pdf";
 
 function AboutMe() {
   const downloadCV = () => {

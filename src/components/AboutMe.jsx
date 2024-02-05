@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import elise_1 from "../assets/foto1.jpg";
 import cvFile from "../assets/EliseJonkers_FullStackDeveloper_CV.pdf";
 
@@ -13,9 +12,6 @@ function AboutMe() {
         <div className="aboutme-item-1">
           <img src={elise_1} alt="photo 1" />
         </div>
-        {/* <div className="aboutme-item-3">
-          
-        </div> */}
         <div className="aboutme-item-2">
           <h1>About me</h1>
           <p>
@@ -41,7 +37,7 @@ function AboutMe() {
             the development and improvement of digital products, bringing
             creativity and efficiency together.{" "}
           </p>
-          <br/>
+          <br />
           <button className="btn btn-sm bg-info" onClick={downloadCV}>
             Download my CV
           </button>

@@ -1,8 +1,7 @@
-import axios from "axios"
-import { useEffect, useState } from "react"
-import { Link } from "react-router-dom"
+import axios from "axios";
+import { useEffect, useState } from "react";
 
-function Skills () {
+function Skills() {
   const [skills, setSkills] = useState([]);
 
   const loadSkills = () => {
@@ -20,7 +19,11 @@ function Skills () {
     if (skill.type === "hard") {
       return <span className="hard badge">{skill.name}</span>;
     } else if (skill.type === "soft") {
-      return <span key={skill.id} className="soft badge">{skill.name}</span>;
+      return (
+        <span key={skill.id} className="soft badge">
+          {skill.name}
+        </span>
+      );
     }
   };
 
@@ -31,16 +34,16 @@ function Skills () {
   return (
     <div>
       <div className="title-container">
-            <h1 className="title">Skills</h1>
-            </div>
+        <h1 className="title">Skills</h1>
+      </div>
 
       <div className="skills-container">
         {skills.map((skill) => {
-          return typeOfSkill(skill)
+          return typeOfSkill(skill);
         })}
-        </div>
       </div>
+    </div>
   );
 }
 
-export default Skills
+export default Skills;

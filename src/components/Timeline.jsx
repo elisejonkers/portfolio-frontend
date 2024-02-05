@@ -1,6 +1,5 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 
 function Timeline() {
   const [timelineItems, setTimelineItems] = useState([]);
@@ -18,24 +17,23 @@ function Timeline() {
 
   const decideClassName = (id) => {
     if (id % 2 === 0) {
-      return 'timeline-start md:text-end mb-10'
+      return "timeline-start md:text-end mb-10";
     } else {
-      return "timeline-end mb-10"
+      return "timeline-end mb-10";
     }
-  }
+  };
 
   useEffect(() => {
     loadTimelineItems();
   }, []);
 
-
   return (
     <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
       <div className="title-container">
-                <div className="line"></div>
-            <h1 className="title">Over the years</h1>
-            <div className="line"></div>
-            </div>
+        <div className="line"></div>
+        <h1 className="title">Over the years</h1>
+        <div className="line"></div>
+      </div>
       {timelineItems.map((item) => {
         return (
           <li>
@@ -53,7 +51,7 @@ function Timeline() {
                 />
               </svg>
             </div>
-            <div className={decideClassName(item.id)}> 
+            <div className={decideClassName(item.id)}>
               <time className="font-mono italic">{item.date}</time>
               <div className="text-lg font-black">{item.title}</div>
               <div className="text-md italic">{item.company}</div>

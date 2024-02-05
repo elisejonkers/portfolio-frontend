@@ -21,13 +21,16 @@ function ContactMe() {
             </a>
           </div>
           <div className="linkedin">
-          <img src={linkedin_icon} alt="linkedin icon" className="icon" />
-            <a href="https://www.linkedin.com/in/elise-jonkers-full-stack-developer/" target="_blank">
+            <img src={linkedin_icon} alt="linkedin icon" className="icon" />
+            <a
+              href="https://www.linkedin.com/in/elise-jonkers-full-stack-developer/"
+              target="_blank"
+            >
               <p>elise-jonkers-full-stack-developer</p>
             </a>
           </div>
           <div className="github">
-          <img src={github_icon} alt="github icon" className="icon" />
+            <img src={github_icon} alt="github icon" className="icon" />
             <a href="https://github.com/elisejonkers" target="_blank">
               <p>elisejonkers</p>
             </a>

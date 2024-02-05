@@ -13,7 +13,6 @@ return (
     <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/projectdetails/:projectId" element={<ProjectDetails/>}/>
-        <Route path="/experiencedetails/:experienceId" element={<ExperienceDetails/>}/>
     </Routes>
     </>
 )

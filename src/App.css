@@ -114,7 +114,8 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    margin-bottom: 5%;
+    margin-bottom: 5%; 
+    overflow: auto;
 }
 
 .project-card h1 {

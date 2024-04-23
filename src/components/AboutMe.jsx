@@ -1,5 +1,5 @@
 import elise_1 from "../assets/foto1.jpg";
-import cvFile from "../assets/EliseJonkers_FullStackDeveloper_CV.pdf";
+import cvFile from "../assets/CV_EliseJonkers.pdf"
 
 function AboutMe() {
   const downloadCV = () => {

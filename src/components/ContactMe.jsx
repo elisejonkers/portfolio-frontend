@@ -12,7 +12,7 @@ function ContactMe() {
           <p>
             Don't hesitate to contact me! You can reach me via Linkedin or by
             sending an email. I am open to any feedback, requests, questions, a
-            converstation or just a hello. I'm looking forward to your message!{" "}
+            converstation or just an hello. I'm looking forward to your message!{" "}
           </p>
           <div className="email">
             <img src={email_icon} alt="linkedin icon" className="icon" />
